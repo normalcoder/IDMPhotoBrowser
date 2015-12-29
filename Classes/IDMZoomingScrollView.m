@@ -233,6 +233,8 @@
 	// Center
 	if (!CGRectEqualToRect(_photoImageView.frame, frameToCenter))
 		_photoImageView.frame = frameToCenter;
+
+    _progressView.center = _photoImageView.center;
 }
 
 #pragma mark - UIScrollViewDelegate
