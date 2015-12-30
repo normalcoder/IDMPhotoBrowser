@@ -187,7 +187,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
         
         _applicationWindow = [[[UIApplication sharedApplication] delegate] window];
 		
-		if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"))
+		if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
 		{
 			self.modalPresentationStyle = UIModalPresentationCustom;
 			self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
@@ -518,7 +518,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
         if ([_delegate respondsToSelector:@selector(photoBrowser:didDismissAtPageIndex:)])
             [_delegate photoBrowser:self didDismissAtPageIndex:_currentPageIndex];
 		
-		if (SYSTEM_VERSION_LESS_THAN(@"8.0"))
+		if (SYSTEM_VERSION_LESS_THAN(@"7.0"))
 		{
 			_applicationTopViewController.modalPresentationStyle = _previousModalPresentationStyle;
 		}
