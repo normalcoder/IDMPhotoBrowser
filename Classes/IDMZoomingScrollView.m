@@ -234,6 +234,7 @@
 - (void)layoutSubviews {
 	// Update tap view frame
 	_tapView.frame = self.bounds;
+    _failureView.frame = self.bounds;
     
 	// Super
 	[super layoutSubviews];
