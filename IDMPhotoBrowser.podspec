@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license       =  { :type => 'MIT', :file => 'LICENSE.txt' }
   s.author        =  { "Eduardo Callado" => "eduardo_tasker@hotmail.com" }
   s.platform      =  :ios, '8.0'
-  s.source        =  { :git => 'https://github.com/normalcoder/SDWebImage', :branch => 'accept-cert' }
+  s.source        =  { :git => 'https://github.com/normalcoder/SDWebImage', :commit => '30a96639085ebe3103f8680790f18022c1331cd7' }
   s.source_files  =  'Classes/*.{h,m}'
   s.resources     =  'Classes/IDMPhotoBrowser.bundle', 'Classes/IDMPBLocalizations.bundle'
   s.framework     =  'MessageUI', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'Security'
